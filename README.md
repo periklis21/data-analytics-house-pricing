@@ -1,2 +1,24 @@
-# data-analytics-house-pricing
-Data Analytics project, predicting house prices using clustering, classification, and neural network regression.
+# Data Mining & Machine Learning Pipeline
+
+Αυτό το αποθετήριο περιέχει ένα ολοκληρωμένο project εξόρυξης δεδομένων και μηχανικής μάθησης, με τα στάδια υλοποίησης να χωρίζονται σε τέσσερα Jupyter Notebooks (`01_preprocessing.ipynb`, `02_clustering.ipynb`, `3_classification.ipynb`, `04_regression.ipynb`)[cite: 8].
+
+## 📂 Δομή του Project
+* `data/`: Τα πρωτογενή και επεξεργασμένα σύνολα δεδομένων.
+* `notebooks/`: Περιέχει τον πηγαίο κώδικα της ανάλυσης, καθώς και τα αρχεία `libraries.txt` και `requirements.txt`[cite: 8].
+* `results/`: Τα εξαγόμενα αποτελέσματα και οι μετρικές αξιολόγησης των μοντέλων.
+* `report/`: Περιέχει το αναλυτικό αρχείο PDF, στο οποίο υπάρχει η πλήρης εξήγηση του κώδικα, της μεθοδολογίας και η ερμηνεία των τελικών αποτελεσμάτων.
+
+## 🧠 Τεχνολογίες & Υλοποίηση
+Το project αναπτύχθηκε σε περιβάλλον Python 3.12[cite: 9, 10]. Ανάλογα με το στάδιο ανάλυσης, χρησιμοποιήθηκαν οι εξής τεχνολογίες:
+* **Προεπεξεργασία & Ομαδοποίηση (01_preprocessing & 02_clustering):** Αξιοποιήθηκαν οι βιβλιοθήκες numpy, pandas, matplotlib, seaborn και scikit-learn.
+* **Ταξινόμηση (3_classification):** Υλοποιήθηκε με χρήση pandas, matplotlib και scikit-learn.
+* **Παλινδρόμηση (04_regression):** Δημιουργήθηκαν μοντέλα νευρωνικών δικτύων σε CPU χρησιμοποιώντας tensorflow-cpu και keras, συνδυαστικά με scikit-learn, numpy και pandas[cite: 9, 10].
+
+## 🚀 Εγκατάσταση και Εκτέλεση
+
+Για την τοπική εκτέλεση του κώδικα, πρέπει να εγκαταστήσετε τις βιβλιοθήκες στο ίδιο περιβάλλον Python που θα επιλέξετε ως kernel[cite: 10]. 
+
+**Γενική εγκατάσταση (ακριβείς εκδόσεις):**
+Ανοίξτε το τερματικό σας στο βασικό φάκελο του project και τρέξτε:
+```bash
+pip install -r notebooks/requirements.txt
