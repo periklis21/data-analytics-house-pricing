@@ -1,0 +1,49 @@
+ΒΙΒΛΙΟΘΗΚΕΣ ΓΙΑ ΟΛΑ ΤΑ NOTEBOOKS
+
+Πριν εκτελέσουμε τα notebooks εγκαθιστούμε τις παρακάτω βιβλιοθήκες
+στο ίδιο περιβάλλον Python που έχουμε επιλέξει ως kernel.
+
+1. numpy: αριθμητικές πράξεις και αριθμητικοί πίνακες.
+2. pandas: ανάγνωση CSV και επεξεργασία δεδομένων.
+3. matplotlib: γραφήματα και αποθήκευσή τους σε PNG/PDF.
+4. seaborn: στατιστικά γραφήματα στο preprocessing και στο clustering.
+5. scikit-learn: scaling, clustering, classification και μετρικές αξιολόγησης.
+   Στον κώδικα το εισάγουμε με το όνομα sklearn.
+6. tensorflow-cpu: TensorFlow για τα νευρωνικά δίκτυα του regression σε CPU.
+   Στον κώδικα το εισάγουμε ως tensorflow. Δεν απαιτείται κάρτα γραφικών.
+7. keras: εργαλεία δημιουργίας νευρωνικών δικτύων. Το TensorFlow εγκαθιστά
+   και τη συμβατή εξάρτηση Keras· στον κώδικα χρησιμοποιούμε tensorflow.keras.
+8. ipykernel: για να εκτελούμε τα notebooks με το περιβάλλον Python μας.
+
+Το pathlib περιλαμβάνεται στην Python και δεν το εγκαθιστούμε ξεχωριστά.
+
+ΠΟΙΑ ΧΡΗΣΙΜΟΠΟΙΟΥΜΕ ΑΝΑ NOTEBOOK
+
+01_preprocessing: numpy, pandas, matplotlib, seaborn, scikit-learn.
+02_clustering: numpy, pandas, matplotlib, seaborn, scikit-learn.
+3_classification: pandas, matplotlib, scikit-learn.
+04_regression: numpy, pandas, matplotlib, scikit-learn, TensorFlow/Keras.
+
+ΕΓΚΑΤΑΣΤΑΣΗ
+
+Χρησιμοποιούμε κατά προτίμηση Python 3.12. Για τις συγκεκριμένες εκδόσεις
+των βιβλιοθηκών υπάρχει το requirements.txt στον ίδιο φάκελο.
+Το requirements.txt είναι λίστα εγκατάστασης όχι πρόγραμμα Python.
+Αυτό το libraries.txt είναι απλώς το αρχείο οδηγιών που διαβάζουμε.
+
+Σε ένα προσωρινό κελί notebook γράφουμε:
+
+%pip install -r requirements.txt
+
+Η εντολή υποθέτει ότι εκτελούμε από τον φάκελο notebooks.
+Μετά την εγκατάσταση επιλέγουμε Restart Kernel και Run All.
+Μπορούμε έπειτα να αφαιρέσουμε το προσωρινό κελί εγκατάστασης.
+Δεν χρειάζεται να κάνουμε εγκατάσταση κάθε φορά που τρέχουμε τα notebooks.
+
+Εάν θέλουμε απλή εγκατάσταση χωρίς συγκεκριμένες εκδόσεις, σε περιβάλλον Linux:
+
+%pip install numpy pandas matplotlib seaborn scikit-learn tensorflow-cpu ipykernel
+
+Οι διαφορετικές εκδόσεις μπορεί να δώσουν μικρές διαφορές αποτελεσμάτων.
+Το ipykernel χρειάζεται για την εκτέλεση notebooks αν και δεν γράφουμε
+import ipykernel μέσα στον κώδικα της εργασίας.
